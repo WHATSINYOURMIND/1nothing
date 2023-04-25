@@ -1,0 +1,33 @@
+# program for single and multilevel inheritance
+
+class A:
+    def display(self):
+        print("I AM IN A")
+        a = 10
+        b = 20
+        c = a*b
+        print(c)
+
+class B(A):
+    def show(self):
+        print("SHOW SOME RESPECT MANN")
+
+    def display2(self):
+        print("I AM IN B")
+
+
+class C(B):
+    def display3(self):
+        print("MULTILEVEL INHERITED CLASS")
+        print("its a multilevel part")
+
+
+obj = B()
+obj.display()
+obj.show()
+
+# multilevel inheritance
+obj1 = C()
+obj1.display2()
+obj1.display()# a function of A called by the object of A
+obj1.display3()

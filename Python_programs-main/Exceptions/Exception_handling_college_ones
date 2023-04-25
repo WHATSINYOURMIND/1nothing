@@ -1,0 +1,47 @@
+# program to handle multiple errors with one
+# except statement
+# syntax
+# try:
+#     execution statements
+# except:
+#       execution statements
+
+# college program 1
+numbers = [1,2,3,4,5,7]
+multipliers = [3,4,6,2,5]
+
+try:
+    for i in range(max(len(numbers),len(multipliers))):
+        numbers[i] = numbers[i] * multipliers[i]
+
+except IndexError:
+    print("Program halted since list exhausted")
+except NumeError:
+    print("List does not exist")
+else:
+    print("Multiplication of two lists is done")
+finally:
+    print(numbers)
+    print(multipliers)
+
+# college program 2
+# nested try catch
+a = 6
+b = 7.5
+
+try:
+    c = a+b
+    print(c)
+except TypeError:
+    try:
+        b1 = int(b)
+        c = a+b1
+        print(c)
+    except ValueError:
+        b1 = float(b)
+        c = a+b1
+        print(c)
+
+except Exception as e:
+    print(e)
+

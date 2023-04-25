@@ -1,0 +1,62 @@
+# collection based data types - list , tuples , dictionary and strings
+# we will see tuples and its operations here
+
+# arrays : a = np.array([x,y,z,...]) - array uses numpy or general array to get created
+
+# list : [x,y,z....] - list is created using squared brackets
+
+# tuple: a = (x,y,z....) - tuples is created using circular brackets
+
+# dictionary: a = { x:y, x1:y1, x2:y2.....} - created using curly braces and pairs
+
+# here we have studied about tuples and its operations
+
+var = ("laksh", "is", "a", "ex", "codecell", "member", 1, True)
+print(var)
+
+tuple_constructor = tuple(("dsa", "developement", "deep learning"))
+print(tuple_constructor)
+
+tuple1 = (1, 2, 3, 4, 5, 6)
+tuple2 = ('laksh', 'doshi')
+
+# OPERATIONS ON A TUPLE
+
+# accessing tuples values using positive and negative index
+print("value in var[0] = ", var[1])  # is
+print("value in var[0] = ", var[-2])  # ex
+
+# concatenation
+print(tuple1+tuple2)
+
+# nesting of tuples
+tuple3 = (tuple1, tuple2)
+print(tuple3)
+
+# Repitition in tuples
+tuple4 = ('Dhoni',)*5
+print(tuple4)
+
+# slicing tuples
+print(tuple1[1:])
+print(tuple1[::-1])
+
+# Finding length of tuples
+print(len(tuple1))
+print(len(tuple2))
+print(len(tuple3))
+
+# You can convert a list to a tuple
+list11 = [1, 4, 6, 8]
+print(tuple(list11))
+
+tup = ('laksh',)
+n = 3
+for i in range(int(n)):
+    tup = (tup,)
+    print(tup)
+
+#  Tuples allow duplicate values, which means that you can have multiple items with the same value in a tuple.
+# deleting a tuple throws error
+# tuples are immutable
+# if we try to add or remove a value from a tuple it throws an error

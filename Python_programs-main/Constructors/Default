@@ -1,0 +1,18 @@
+# constructor program
+class laksh_here:
+    # default constructor
+    # . By using the “self” we can access the attributes and methods of the class in python
+    def __init__(self):
+        self.l = "LAKSH DOSHI"
+
+    # function to print values
+    def prinnn(self):
+        print(self.l)
+
+
+# creating an object of the class
+obj = laksh_here()
+
+#calling th instance method using the object obj
+obj.prinnn()
+        

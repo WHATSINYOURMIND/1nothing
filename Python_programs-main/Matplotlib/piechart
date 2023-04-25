@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([25, 45, 23, 7])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+myexplode = [0.2, 0, 0, 0]
+
+plt.pie(y, labels=mylabels, explode=myexplode)
+plt.legend(title = "FOUR FRUITS OR DEPT")
+plt.show()
+
+# start_angle can also be given in the pie chart
+# explode parameter - it takes out a part from the pie chart
+# shadow parameter - True and False
+# we can add colors to each specific pie of the pie chart
+# we can add a legend too
+

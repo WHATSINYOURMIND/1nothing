@@ -1,0 +1,39 @@
+# parameterized constructors
+class multiply:
+    first =  0
+    second = 0
+    result = 0
+
+    # parameterized constructor
+    def __init__(self,f,s):
+        self.first = f
+        self.second = s
+
+    def display(self):
+        print("First number = " + str(self.first))
+        print("Second number = " + str(self.second))
+        print("Addition of two numbers = " + str(self.result))
+
+    #calculation function
+    def calculate(self):
+        self.result = self.first * self.second
+
+
+
+# object creation
+ob1  = multiply(25,40)
+
+#object 2 creation
+ob2 = multiply(10,30)
+
+# perform multiplication on obj1
+ob1.calculate()
+
+# perform multiplication on obj1
+ob2.calculate()
+
+# displaying
+ob1.display()
+
+#displaying 2
+ob2.display()

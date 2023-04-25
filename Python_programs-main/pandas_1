@@ -1,0 +1,28 @@
+# CREATION OF DATA FRAME IN PANDAS
+# DATA SETS IN PANDAS ARE USUALLY MULTI DIMENSIONAL TABLES CALLED DATAFRAMES
+
+import pandas as pd
+mydataset = {
+'cars': ["BMW", "Volvo", "Ford"],
+'passings': [3, 7, 2]
+}
+myvar = pd.DataFrame(mydataset)
+print(myvar)
+print()
+print(myvar.loc[[1,2]])
+print()
+
+# PANDAS SERIES - IT IS LIKE A COLUMN IN A TABLE
+# Can label the index as well
+# key value pairs can also be used like a dictionary
+# Named indexes , locating row
+
+a = [1, 7, 2, 10, 12]
+myvar = pd.Series(a, index=["x","y","z","zz","yy"])
+print(myvar)
+
+#loading a file into a dataframe
+# df = pd.read_csv(file_name)
+
+# If you have a large DataFrame with many rows, Pandas will only return the first 5 rows, and the last 5 rows:
+# Print the DataFrame without the to_string() method:

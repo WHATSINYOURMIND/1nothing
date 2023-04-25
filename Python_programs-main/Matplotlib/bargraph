@@ -1,0 +1,19 @@
+# This program will create a bar graph
+# till now we made normal points and straight line sketches
+
+# To create a bar function use a bar() function
+import matplotlib.pyplot as plt
+import numpy as np
+
+# bar graph can have color , width of the bar , horizontal bars
+# for horizontal bars plot - use barh() function
+
+x = np.array(["A", "B", "C", "D", "E", "F"])
+y = np.array([3, 8, 4, 10, 12, 13])
+
+# for a vertical bar graph
+plt.bar(x, y, color = 'red', width=0.4)
+
+# for a horizontal graph
+# plt.barh(x, y, color = 'red', height = 0.2)
+plt.show()

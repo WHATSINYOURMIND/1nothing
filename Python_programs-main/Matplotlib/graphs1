@@ -1,0 +1,34 @@
+# This program is to draw a ONE line from one point to another
+
+# Notes of markers
+# plt.plot(x_points, y_points, 'o')
+# There are many more markers available like - x, X, o, P, *, s, p, H
+
+# format string fmt
+# You can use also use the shortcut string notation parameter to specify the marker.
+# This parameter is also called fmt, and is written with this syntax:
+
+# marker notation - the type of marker used
+# marker colour - color of the marker added
+# marker size - size of the marker added and not the edge
+# marker edge color - edge of marker can have a different colour
+# marker face color - the color of the face of the marker
+# line_style - the type of line to be added
+# line color - specifies the color of the line
+# line_width - width of the line
+# Title of graph , x_label of graph , y_label of graph
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x_points = np.array([0, 6, 8])
+y_points = np.array([0, 5, 2, 8])
+
+plt.plot(y_points, marker='*', ms=15, mec='r', mfc='y', linestyle='solid', color='b')
+plt.title("POINTS PLOTTING")
+plt.xlabel("SCORE")
+plt.ylabel("STUDENTS")
+plt.show()
+
+
+

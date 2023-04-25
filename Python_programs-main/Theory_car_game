@@ -1,0 +1,30 @@
+entry = ""
+started = False
+while True:
+    entry = input('> ')
+    if entry == 'start':
+        if started:
+            print('Car has already started')
+        else:
+            started = True
+            print('Start the car')
+    elif entry == 'stop':
+        if not started:
+            print('car has already stopped')
+        else:
+            started = False
+            print("car stopped")
+    elif entry == 'help':
+        print('start - start the car\n'
+              'Stop - stop the car\n'
+              'quit - to exit')
+    elif entry == 'quit':
+        break
+    else:
+        print("SORRY I DONT UNDERSTAND THAT")
+
+
+
+
+
+

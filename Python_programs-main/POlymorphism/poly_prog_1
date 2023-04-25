@@ -1,0 +1,50 @@
+# 1) Python program to demonstrate in-built poly-morphic functions
+
+# len() being used for a string
+print(len("geeks"))
+
+# len() being used for a list
+print(len([10, 20, 30]))
+
+
+# 2) polymorphism in simple functions
+def add(x,y,z=0):
+    return x+ y+z
+
+# drivers code
+print(add(2,3))
+print(add(2,3,4))
+
+
+# 3) polymorphism with class methods
+# 4) Method overriding in python to achieve poylmorphism
+#     - it is achieved using the concept of inheritance, without that overriding cannot be understood
+
+class bird:
+    def defined(self):
+        print("There are many types of birds")
+
+    def flight(self):
+        print("most of the birds fly except a few")
+
+
+class sparrow(bird):
+    def flight(self):
+        print("Sparrows can fly")
+
+
+class ostrich(bird):
+    def flight(self):
+        print("Ostriches cannot fly")
+
+objbird = bird()
+objspar = sparrow()
+objost = ostrich()
+
+objbird.defined()
+objbird.flight()
+
+# objspar.defined()
+objspar.flight()
+
+objost.flight()

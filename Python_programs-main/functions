@@ -1,0 +1,18 @@
+# define a function
+# syntax : def function name():
+#: - block of code is getting defined
+# two lines to be left after defining the function
+
+def greet(fname, sname):
+    # print("hi there")
+    print(f" hi {fname} {sname}")
+
+
+print("start")
+greet(fname="laksh", sname="doshi")
+
+# parameters - holes of placeholders that we define in our function for receiving info
+# arguments - actual pieces of info that we supply to these functions.
+# positional arguments
+# keyword arguments
+# you cant use positional arguments in second. always use it at first.
